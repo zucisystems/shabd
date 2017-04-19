@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shabd</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="problem"><a href="http://www.google.com">Have a problem ?</a></string>
+    <string name="Welcome">Welcome</string>
+    <string name="title_section1"><a href="http://www.google.com">Home</a></string>
+    <string name="title_section2"><a href="http://www.google.com">Who We Are</a></string>
+    <string name="title_section3"><a href="http://www.google.com">Services</a></string>
+    <string name="title_section4"><a href="http://www.google.com">Blog</a></string>
+    <string name="title_section5"><a href="http://www.google.com">Careers</a></string>
+    <string name="title_section6"><a href="http://www.google.com">Contact Us</a></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example"></string>
+    <string name="action_settings">Settings</string>
+    <string name="back">Back to home</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_main_activity1">MainActivity1</string>
+    <string name="saved">Saved in SharedPreferences. Go to second activity.</string>
+    <string name="save">Save</string>
+</resources>
