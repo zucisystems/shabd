@@ -61,6 +61,8 @@
 ## Conclusion
                
                     This application aims at simplifying the job of testing simpler.we believe it serves its purpose.
+		    
+		    For more queries regarding how to use our app kindly watch this video : https://www.youtube.com/watch?v=GPZCRHat8u0&t=380s
 
 
                
