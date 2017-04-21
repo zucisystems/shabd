@@ -47,7 +47,8 @@
 
 * Once the process is completed go to your internal storage and you'll find 2 folders named Shabd and ShabdTest.
 
-![screenshot_2017-04-20-13-06-47-141_com estrongs android pop](https://cloud.githubusercontent.com/assets/27756657/25224779/0ccfdaee-25dd-11e7-86cb-de4b17eeb92d.png)
+![screenshot_2017-04-20-13-06-47-141_com estrongs android pop](https://cloud.githubusercontent.com/assets/27756657/25262800/68ff3f6c-2678-11e7-9df2-d5f400241cdc.png)
+
 
 * In the respective folders you'll see files with proper datestamps as their filenames.
  .mm is for mindmap and .txt is for testcase.
