@@ -17,16 +17,16 @@ public class WordToNumeric {
 	    return true;
 	}
 	public static int convertToNumeric(String input){
-		int i = 0;
-		if(isInteger(input)){
+		int i = 0 ;
+		if(isInteger(input))
+		{
 			i=Integer.parseInt(input); 
 			return i;
 		}
 		else{
 			
-		if(input.equalsIgnoreCase("tu") || input.equalsIgnoreCase("too"))
-			input="two";
-		switch(input.toUpperCase()){
+		switch(input.toUpperCase())
+		{
 		case "ZERO":break;	
 		case "ONE":i=1;
 					break;	
@@ -46,8 +46,9 @@ public class WordToNumeric {
 		break;
 		case "NINE":i=9;
 		break;
+		default: i=99;
+		     break;
 		
-			
 		}
 		}
 		return i;

@@ -38,12 +38,15 @@
         </activity>
         <activity android:name=".WebViewWhoWeAre" >
         </activity>
-        <activity android:name=".WebViewServiceFunctionalTesting" >
+        <activity android:name=".WebViewServiceDigitalEngineering" >
         </activity>
-        <activity android:name=".WebViewServiceNonFunctionalTesting" >
+        <activity android:name=".WebViewServiceQualityEngineering" >
         </activity>
-        <activity android:name=".WebViewServiceContinuousTesting" >
+        <activity android:name=".WebViewServiceEnterprise" >
         </activity>
+        <activity android:name=".WebViewServiceITSM" >
+        </activity>
+        
         <activity android:name=".WebViewBlog" >
         </activity>
         <activity android:name=".WebViewCareers" >

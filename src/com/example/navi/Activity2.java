@@ -26,7 +26,7 @@ public class Activity2 extends Activity {
 	private TextView mText;
     private EditText mUserInput;
 	private ImageButton btnSpeak;
-	private String data1;
+	private String data1,disp_text;
 	public static String sb;
 	SharedPreferences sharedPref,sh1;
 	protected static final int RESULT_SPEECH = 1;
@@ -75,8 +75,8 @@ public void clicktype(View view)
       //now get Editor
       SharedPreferences.Editor editor = sharedPref.edit();
       //put your value
-      editor.putString("userName",mUserInput.getText().toString());
-String temp=mUserInput.getText().toString();
+      String temp=mUserInput.getText().toString().substring(0, 1).toUpperCase() + mUserInput.getText().toString().substring(1);
+      editor.putString("userName",temp);
       //commits your edits
       editor.commit();
       createAndShowAlertDialog();
@@ -120,10 +120,12 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 	
 
 	}
-private void createAndShowAlertDialog() {
+private void createAndShowAlertDialog()
+{
     AlertDialog.Builder builder = new AlertDialog.Builder(this);
     builder.setTitle("MindMap");
-    builder.setMessage("Is your word "+mUserInput.getText().toString()+" Correct");
+    disp_text=mUserInput.getText().toString().substring(0, 1).toUpperCase() + mUserInput.getText().toString().substring(1);
+    builder.setMessage("Is your word "+disp_text+" Correct");
     builder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
         public void onClick(DialogInterface dialog, int id) {
              //TODO
@@ -132,7 +134,8 @@ private void createAndShowAlertDialog() {
         }
     });
     builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
-        public void onClick(DialogInterface dialog, int id) {
+        public void onClick(DialogInterface dialog, int id) 
+        {
              //TODO
              dialog.dismiss();
         }

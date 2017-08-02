@@ -12,7 +12,7 @@ import android.support.v7.app.ActionBarActivity;
 @SuppressWarnings("deprecation")
 @SuppressLint({ "NewApi", "SetJavaScriptEnabled" })
 
-public class WebViewServiceContinuousTesting extends ActionBarActivity {
+public class WebViewServiceEnterprise extends ActionBarActivity {
 
 	private WebView webView;
 
@@ -23,7 +23,7 @@ public class WebViewServiceContinuousTesting extends ActionBarActivity {
 		webView = (WebView) findViewById(R.id.webview);
 		webView.getSettings().setJavaScriptEnabled(true);
 		webView.setWebViewClient(new Callback());  //HERE IS THE MAIN CHANGE
-		webView.loadUrl("http://www.zucisystems.com/continuous-testing.html");
+		webView.loadUrl("http://www.zucisystems.com/enterprise-information-management.html");
 	}
 	
 	public boolean onCreateOptionsMenu(Menu menu) {

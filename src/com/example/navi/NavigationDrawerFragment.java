@@ -119,9 +119,10 @@ public class NavigationDrawerFragment extends Fragment  {
 	    mainActions.add(new Azione(getString(R.string.title_section5)));                   // 6
 	    mainActions.add(new Azione(getString(R.string.title_section6)));   // 7
 		List<String> services = new ArrayList<String>();
-		services.add("Functional Testing");
-		services.add("Non Functional Testing");
-		services.add("Continuous Testing");
+		services.add("Digital Engineering");
+		services.add("Quality Engineering");
+		services.add("Enterprise management");
+		services.add("ITSM");
 		childActions.put(0, new ArrayList<String>());
 	    childActions.put(1, new ArrayList<String>());
 	    childActions.put(2, services);
@@ -147,7 +148,7 @@ public class NavigationDrawerFragment extends Fragment  {
 	            		startActivity(new Intent(getContext(), WebViewWhoWeAre.class));
 	        			break;
 	        		case 2:
-	        			startActivity(new Intent(getContext(), WebViewServiceFunctionalTesting.class));
+	        			startActivity(new Intent(getContext(), WebViewServiceDigitalEngineering.class));
 	        			break;
 	        		case 3:
 	        			startActivity(new Intent(getContext(), WebViewBlog.class));
@@ -176,14 +177,18 @@ public class NavigationDrawerFragment extends Fragment  {
 	            if(list.size() > 0){
 	            	switch(childPosition){
 	            	case 0:
-	            	startActivity(new Intent(getContext(), WebViewServiceFunctionalTesting.class));
+	            	startActivity(new Intent(getContext(), WebViewServiceDigitalEngineering.class));
 	            	break;
 	            	case 1:
-	            		startActivity(new Intent(getContext(), WebViewServiceNonFunctionalTesting.class));
+	            		startActivity(new Intent(getContext(), WebViewServiceQualityEngineering.class));
 	        			break;
 	        		case 2:
-	        			startActivity(new Intent(getContext(), WebViewServiceContinuousTesting.class));
+	        			startActivity(new Intent(getContext(), WebViewServiceEnterprise.class));
+	        			    			break;
+	        		case 3:
+	        			startActivity(new Intent(getContext(), WebViewServiceITSM.class));
 	        			break;
+	        			    			
 	        		default:
         				Toast.makeText(getActivity(), "Link not Available", Toast.LENGTH_LONG).show();
         				break;
